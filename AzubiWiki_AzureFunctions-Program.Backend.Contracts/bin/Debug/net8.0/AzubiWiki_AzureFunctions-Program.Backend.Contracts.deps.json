@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "AzubiWiki_AzureFunctions-Program.Backend.Contracts/1.0.0": {
+        "runtime": {
+          "AzubiWiki_AzureFunctions-Program.Backend.Contracts.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AzubiWiki_AzureFunctions-Program.Backend.Contracts/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "version": 2,
+  "dgSpecHash": "hPGWYmohlBs=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Ioannis.Batenkof\\source\\repos\\AzubiWiki.Backend\\AzubiWiki_AzureFunctions-Program.Backend.Repositories\\AzubiWiki_AzureFunctions-Program.Backend.Repositories.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Ioannis.Batenkof\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
+    "C:\\Users\\Ioannis.Batenkof\\.nuget\\packages\\azure.core\\1.44.1\\azure.core.1.44.1.nupkg.sha512",
+    "C:\\Users\\Ioannis.Batenkof\\.nuget\\packages\\azure.storage.blobs\\12.22.2\\azure.storage.blobs.12.22.2.nupkg.sha512",
+    "C:\\Users\\Ioannis.Batenkof\\.nuget\\packages\\azure.storage.common\\12.21.1\\azure.storage.common.12.21.1.nupkg.sha512",
+    "C:\\Users\\Ioannis.Batenkof\\.nuget\\packages\\fluentassertions\\6.12.2\\fluentassertions.6.12.2.nupkg.sha512",
+    "C:\\Users\\Ioannis.Batenkof\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
+    "C:\\Users\\Ioannis.Batenkof\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\Ioannis.Batenkof\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\Ioannis.Batenkof\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
+    "C:\\Users\\Ioannis.Batenkof\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "C:\\Users\\Ioannis.Batenkof\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\Ioannis.Batenkof\\.nuget\\packages\\system.clientmodel\\1.1.0\\system.clientmodel.1.1.0.nupkg.sha512",
+    "C:\\Users\\Ioannis.Batenkof\\.nuget\\packages\\system.configuration.configurationmanager\\4.4.0\\system.configuration.configurationmanager.4.4.0.nupkg.sha512",
+    "C:\\Users\\Ioannis.Batenkof\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.1\\system.diagnostics.diagnosticsource.6.0.1.nupkg.sha512",
+    "C:\\Users\\Ioannis.Batenkof\\.nuget\\packages\\system.io.hashing\\6.0.0\\system.io.hashing.6.0.0.nupkg.sha512",
+    "C:\\Users\\Ioannis.Batenkof\\.nuget\\packages\\system.memory.data\\6.0.0\\system.memory.data.6.0.0.nupkg.sha512",
+    "C:\\Users\\Ioannis.Batenkof\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\Ioannis.Batenkof\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\Ioannis.Batenkof\\.nuget\\packages\\system.security.cryptography.protecteddata\\4.4.0\\system.security.cryptography.protecteddata.4.4.0.nupkg.sha512",
+    "C:\\Users\\Ioannis.Batenkof\\.nuget\\packages\\system.text.encodings.web\\6.0.0\\system.text.encodings.web.6.0.0.nupkg.sha512",
+    "C:\\Users\\Ioannis.Batenkof\\.nuget\\packages\\system.text.json\\6.0.10\\system.text.json.6.0.10.nupkg.sha512",
+    "C:\\Users\\Ioannis.Batenkof\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512"
+  ],
+  "logs": []
+}
