@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35027.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzubiWiki_AzureFunctions-Program.Backend", "AzubiWiki_AzureFunctions-Program.Backend.csproj", "{A4CF0D61-FBE2-463B-8F47-559001A7C665}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzubiWiki_AzureFunctions-Program.Backend.Contracts", "..\AzubiWiki_AzureFunctions-Program.Backend.Contracts\AzubiWiki_AzureFunctions-Program.Backend.Contracts.csproj", "{B87AEE02-A580-4602-84DA-0B48A767565A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzubiWiki_AzureFunctions-Program.Backend.Core", "..\AzubiWiki_AzureFunctions-Program.Backend.Core\AzubiWiki_AzureFunctions-Program.Backend.Core.csproj", "{487CECB3-3486-4D91-BE97-F777C20D14F7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzubiWiki_AzureFunctions-Program.Backend.Database", "..\AzubiWiki_AzureFunctions-Program.Backend.Database\AzubiWiki_AzureFunctions-Program.Backend.Database.csproj", "{EB94E9A3-743B-46CA-8A29-C22FAC05483E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzubiWiki_AzureFunctions-Program.Backend.Repositories", "..\AzubiWiki_AzureFunctions-Program.Backend.Repositories\AzubiWiki_AzureFunctions-Program.Backend.Repositories.csproj", "{8205CB68-A45E-4253-9E67-FE58C699C544}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzubiWiki_AzureFunctions-Program.Backend.UnitTest", "..\AzubiWiki_AzureFunctions-Program.Backend.UnitTest\AzubiWiki_AzureFunctions-Program.Backend.UnitTest.csproj", "{5152E59F-4E12-4855-88D6-6469D912CE4F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A4CF0D61-FBE2-463B-8F47-559001A7C665}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4CF0D61-FBE2-463B-8F47-559001A7C665}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4CF0D61-FBE2-463B-8F47-559001A7C665}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4CF0D61-FBE2-463B-8F47-559001A7C665}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B87AEE02-A580-4602-84DA-0B48A767565A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B87AEE02-A580-4602-84DA-0B48A767565A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B87AEE02-A580-4602-84DA-0B48A767565A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B87AEE02-A580-4602-84DA-0B48A767565A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{487CECB3-3486-4D91-BE97-F777C20D14F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{487CECB3-3486-4D91-BE97-F777C20D14F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{487CECB3-3486-4D91-BE97-F777C20D14F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{487CECB3-3486-4D91-BE97-F777C20D14F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB94E9A3-743B-46CA-8A29-C22FAC05483E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB94E9A3-743B-46CA-8A29-C22FAC05483E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB94E9A3-743B-46CA-8A29-C22FAC05483E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB94E9A3-743B-46CA-8A29-C22FAC05483E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8205CB68-A45E-4253-9E67-FE58C699C544}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8205CB68-A45E-4253-9E67-FE58C699C544}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8205CB68-A45E-4253-9E67-FE58C699C544}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8205CB68-A45E-4253-9E67-FE58C699C544}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5152E59F-4E12-4855-88D6-6469D912CE4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5152E59F-4E12-4855-88D6-6469D912CE4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5152E59F-4E12-4855-88D6-6469D912CE4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5152E59F-4E12-4855-88D6-6469D912CE4F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {33AD05DA-90B2-4F25-B9D0-C77058CB2F46}
+	EndGlobalSection
+EndGlobal

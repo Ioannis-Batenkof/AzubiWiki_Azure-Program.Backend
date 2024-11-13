@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "AzubiWiki_AzureFunctions_Program.Backend": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7222",
+      "launchBrowser": false
+    }
+  }
+}
