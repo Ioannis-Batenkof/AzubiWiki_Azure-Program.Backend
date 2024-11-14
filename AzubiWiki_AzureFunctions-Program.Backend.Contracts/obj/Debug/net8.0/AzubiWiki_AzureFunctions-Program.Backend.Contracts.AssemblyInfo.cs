@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AzubiWiki_AzureFunctions-Program.Backend.Contracts")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+05d01ba694fe86d6f968a0540f035542f912d272")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+75ec8d0146e2a32196443fbc3bae27189dbe0f02")]
 [assembly: System.Reflection.AssemblyProductAttribute("AzubiWiki_AzureFunctions-Program.Backend.Contracts")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AzubiWiki_AzureFunctions-Program.Backend.Contracts")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

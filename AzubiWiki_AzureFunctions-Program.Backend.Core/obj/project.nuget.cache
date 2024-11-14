@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "g+EaxRzM2as=",
+  "dgSpecHash": "jdOG5RH0l6Y=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Ioannis.Batenkof\\source\\repos\\AzubiWiki.Backend\\AzubiWiki_AzureFunctions-Program.Backend.Core\\AzubiWiki_AzureFunctions-Program.Backend.Core.csproj",
+  "projectFilePath": "C:\\Users\\Ioannis.Batenkof\\Source\\Repos\\AzubiWiki_Azure-Program.Backend.Revisited\\AzubiWiki_AzureFunctions-Program.Backend.Core\\AzubiWiki_AzureFunctions-Program.Backend.Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ioannis.Batenkof\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\Ioannis.Batenkof\\.nuget\\packages\\fluentassertions\\6.12.2\\fluentassertions.6.12.2.nupkg.sha512",

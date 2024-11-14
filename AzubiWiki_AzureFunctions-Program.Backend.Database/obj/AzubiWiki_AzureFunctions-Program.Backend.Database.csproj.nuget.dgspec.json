@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ioannis.Batenkof\\source\\repos\\AzubiWiki.Backend\\AzubiWiki_AzureFunctions-Program.Backend.Database\\AzubiWiki_AzureFunctions-Program.Backend.Database.csproj": {}
+    "C:\\Users\\Ioannis.Batenkof\\Source\\Repos\\AzubiWiki_Azure-Program.Backend.Revisited\\AzubiWiki_AzureFunctions-Program.Backend.Database\\AzubiWiki_AzureFunctions-Program.Backend.Database.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ioannis.Batenkof\\source\\repos\\AzubiWiki.Backend\\AzubiWiki_AzureFunctions-Program.Backend.Database\\AzubiWiki_AzureFunctions-Program.Backend.Database.csproj": {
+    "C:\\Users\\Ioannis.Batenkof\\Source\\Repos\\AzubiWiki_Azure-Program.Backend.Revisited\\AzubiWiki_AzureFunctions-Program.Backend.Database\\AzubiWiki_AzureFunctions-Program.Backend.Database.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ioannis.Batenkof\\source\\repos\\AzubiWiki.Backend\\AzubiWiki_AzureFunctions-Program.Backend.Database\\AzubiWiki_AzureFunctions-Program.Backend.Database.csproj",
+        "projectUniqueName": "C:\\Users\\Ioannis.Batenkof\\Source\\Repos\\AzubiWiki_Azure-Program.Backend.Revisited\\AzubiWiki_AzureFunctions-Program.Backend.Database\\AzubiWiki_AzureFunctions-Program.Backend.Database.csproj",
         "projectName": "AzubiWiki_AzureFunctions-Program.Backend.Database",
-        "projectPath": "C:\\Users\\Ioannis.Batenkof\\source\\repos\\AzubiWiki.Backend\\AzubiWiki_AzureFunctions-Program.Backend.Database\\AzubiWiki_AzureFunctions-Program.Backend.Database.csproj",
+        "projectPath": "C:\\Users\\Ioannis.Batenkof\\Source\\Repos\\AzubiWiki_Azure-Program.Backend.Revisited\\AzubiWiki_AzureFunctions-Program.Backend.Database\\AzubiWiki_AzureFunctions-Program.Backend.Database.csproj",
         "packagesPath": "C:\\Users\\Ioannis.Batenkof\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ioannis.Batenkof\\source\\repos\\AzubiWiki.Backend\\AzubiWiki_AzureFunctions-Program.Backend.Database\\obj\\",
+        "outputPath": "C:\\Users\\Ioannis.Batenkof\\Source\\Repos\\AzubiWiki_Azure-Program.Backend.Revisited\\AzubiWiki_AzureFunctions-Program.Backend.Database\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -26,7 +26,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -43,8 +42,9 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "direct"
-        }
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -65,7 +65,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

@@ -108,7 +108,10 @@
       },
       "AzubiWiki_AzureFunctions-Program.Backend.Contracts/1.0.0": {
         "runtime": {
-          "AzubiWiki_AzureFunctions-Program.Backend.Contracts.dll": {}
+          "AzubiWiki_AzureFunctions-Program.Backend.Contracts.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }

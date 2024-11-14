@@ -578,7 +578,10 @@
       "xunit.runner.visualstudio/2.8.2": {},
       "AzubiWiki_AzureFunctions-Program.Backend.Contracts/1.0.0": {
         "runtime": {
-          "AzubiWiki_AzureFunctions-Program.Backend.Contracts.dll": {}
+          "AzubiWiki_AzureFunctions-Program.Backend.Contracts.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "AzubiWiki_AzureFunctions-Program.Backend.Core/1.0.0": {
@@ -589,7 +592,10 @@
           "Newtonsoft.Json": "13.0.3"
         },
         "runtime": {
-          "AzubiWiki_AzureFunctions-Program.Backend.Core.dll": {}
+          "AzubiWiki_AzureFunctions-Program.Backend.Core.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "AzubiWiki_AzureFunctions-Program.Backend.Repositories/1.0.0": {
@@ -599,7 +605,10 @@
           "Microsoft.Extensions.Logging.Abstractions": "6.0.0"
         },
         "runtime": {
-          "AzubiWiki_AzureFunctions-Program.Backend.Repositories.dll": {}
+          "AzubiWiki_AzureFunctions-Program.Backend.Repositories.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }
