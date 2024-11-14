@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hPGWYmohlBs=",
+  "dgSpecHash": "Dn/3xXl8Ogs=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Ioannis.Batenkof\\source\\repos\\AzubiWiki.Backend\\AzubiWiki_AzureFunctions-Program.Backend.Repositories\\AzubiWiki_AzureFunctions-Program.Backend.Repositories.csproj",
+  "projectFilePath": "C:\\Users\\Ioannis.Batenkof\\Source\\Repos\\AzubiWiki_Azure-Program.Backend.Revisited\\AzubiWiki_AzureFunctions-Program.Backend.Repositories\\AzubiWiki_AzureFunctions-Program.Backend.Repositories.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ioannis.Batenkof\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\Ioannis.Batenkof\\.nuget\\packages\\azure.core\\1.44.1\\azure.core.1.44.1.nupkg.sha512",
