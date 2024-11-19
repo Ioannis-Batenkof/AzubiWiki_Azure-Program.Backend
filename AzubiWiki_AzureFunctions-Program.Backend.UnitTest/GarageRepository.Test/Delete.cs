@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xunit.Sdk;
 
-namespace AzubiWiki_AzureFunctions_Program.Backend.UnitTest.GarageRepository.Test
+namespace AzubiWiki_AzureFunctions_Program.Backend.UnitTest.GarageRepository.UnitTest
 {
     public class Delete
     {

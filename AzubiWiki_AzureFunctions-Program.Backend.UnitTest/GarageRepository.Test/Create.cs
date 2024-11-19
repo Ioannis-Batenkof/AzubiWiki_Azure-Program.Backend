@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AzubiWiki_AzureFunctions_Program.Backend.UnitTest.GarageRepository.Test
+namespace AzubiWiki_AzureFunctions_Program.Backend.UnitTest.GarageRepository.UnitTest
 {
     public class Create
     {

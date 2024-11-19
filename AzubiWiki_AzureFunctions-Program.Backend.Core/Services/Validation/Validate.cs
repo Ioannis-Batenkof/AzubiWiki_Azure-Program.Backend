@@ -46,7 +46,7 @@ namespace AzubiWiki_AzureFunctions_Program.Backend.Core.Services.Validation
         {
             if (!String.IsNullOrWhiteSpace(car.Manufacturer))
             {
-                car.Manufacturer.Should().NotContainAny("1", "2", "3", "4", "5", "6", "7", "8", "9", "0").And.BeOneOf("Audi", "Opel", "Volkswagen", "Mazda", "BMW", "Mercedes", "Porsche", "Dacia", "Jeep", "Chevrolet", "KIA");
+                car.Manufacturer.Should().NotContainAny("1", "2", "3", "4", "5", "6", "7", "8", "9", "0").And.BeOneOf("Audi","Tesla", "Opel", "Volkswagen", "Mazda", "BMW", "Mercedes", "Porsche", "Dacia", "Jeep", "Chevrolet", "KIA");
             }
 
             if (!String.IsNullOrWhiteSpace(car.Year))

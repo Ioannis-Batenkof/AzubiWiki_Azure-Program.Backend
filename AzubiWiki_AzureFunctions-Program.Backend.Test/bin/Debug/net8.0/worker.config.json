@@ -1,0 +1,10 @@
+{
+  "description": {
+    "language": "dotnet-isolated",
+    "extensions": [ ".dll" ],
+    "defaultExecutablePath": "dotnet",
+    "defaultWorkerPath": "AzubiWiki_AzureFunctions-Program.Backend.dll",
+    "workerIndexing": "true",
+    "canUsePlaceholder": true
+  }
+}

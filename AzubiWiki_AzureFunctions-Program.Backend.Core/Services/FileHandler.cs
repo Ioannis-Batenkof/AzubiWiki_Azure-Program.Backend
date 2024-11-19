@@ -27,7 +27,7 @@ namespace AzubiWiki_AzureFunctions_Program.Backend.Core.Services
 
         public void Delete(string path)
         {
-            File.Delete(path);
+            File.WriteAllTextAsync(path, "");
         }
 
         public FileStream Create(string path)

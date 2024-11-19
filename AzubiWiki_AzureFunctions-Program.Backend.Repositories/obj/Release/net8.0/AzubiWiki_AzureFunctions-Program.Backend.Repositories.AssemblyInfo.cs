@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AzubiWiki_AzureFunctions-Program.Backend.Repositories")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+05d01ba694fe86d6f968a0540f035542f912d272")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b7b29e08179737fd34a81e11faa28543ced79adf")]
 [assembly: System.Reflection.AssemblyProductAttribute("AzubiWiki_AzureFunctions-Program.Backend.Repositories")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AzubiWiki_AzureFunctions-Program.Backend.Repositories")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

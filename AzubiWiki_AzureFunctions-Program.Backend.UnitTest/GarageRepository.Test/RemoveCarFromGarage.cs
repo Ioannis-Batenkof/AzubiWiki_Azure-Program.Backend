@@ -9,11 +9,14 @@ using System.Text;
 using System.Threading.Tasks;
 using Xunit.Sdk;
 
-namespace AzubiWiki_AzureFunctions_Program.Backend.UnitTest.GarageRepository.Test
+namespace AzubiWiki_AzureFunctions_Program.Backend.UnitTest.GarageRepository.UnitTest
 {
     public class RemoveCarFromGarage
     {
         private readonly Mock<IFileHandler> _mockFileHandler = new Mock<IFileHandler>();
+
+        private string GFilePath = "C:\\Users\\Ioannis.Batenkof\\source\repos\\AzubiWiki_Azure-Program.Backend.Revisited\\AzubiWiki_AzureFunctions-Program.Backend.Database\\File_GarageStorage.json";
+        private string CFilePath = "C:\\Users\\Ioannis.Batenkof\\source\repos\\AzubiWiki_Azure-Program.Backend.Revisited\\AzubiWiki_AzureFunctions-Program.Backend.Database\\File_CarStorage.json";
 
 
         [Fact]
@@ -25,8 +28,8 @@ namespace AzubiWiki_AzureFunctions_Program.Backend.UnitTest.GarageRepository.Tes
             List<Car> cars = new List<Car>{ new Car { ID = Guid.NewGuid(), Horsepower = 123, Manufacturer = "audi", Model = "a", Year = 2000 } };
             List<Garage> garages = new List<Garage> { new Garage { BelongsTo = "me", ID = Guid.NewGuid(), Cars = new List<Car> { cars[0] } } };
 
-            _mockFileHandler.Setup(a => a.ReadAllTextAsync("C:\\Users\\Ioannis.Batenkof\\source\\repos\\AzubiWiki_AzureFunctions-Program.Backend.Database\\File_GarageStorage.json")).Returns(Task.FromResult(JsonConvert.SerializeObject(garages, Formatting.Indented)));
-            _mockFileHandler.Setup(a => a.ReadAllTextAsync("C:\\Users\\Ioannis.Batenkof\\source\\repos\\AzubiWiki_AzureFunctions-Program.Backend.Database\\File_CarStorage.json")).Returns(Task.FromResult(JsonConvert.SerializeObject(cars, Formatting.Indented)));
+            _mockFileHandler.Setup(a => a.ReadAllTextAsync(CFilePath)).Returns(Task.FromResult(JsonConvert.SerializeObject(garages, Formatting.Indented)));
+            _mockFileHandler.Setup(a => a.ReadAllTextAsync(GFilePath)).Returns(Task.FromResult(JsonConvert.SerializeObject(cars, Formatting.Indented)));
 
             Repositories.GarageRepository repo = new(_mockFileHandler.Object);
 
@@ -45,8 +48,8 @@ namespace AzubiWiki_AzureFunctions_Program.Backend.UnitTest.GarageRepository.Tes
             List<Car> cars = new List<Car> { new Car { ID = Guid.NewGuid(), Horsepower = 123, Manufacturer = "audi", Model = "a", Year = 2000 } };
             List<Garage> garages = new List<Garage> { new Garage { BelongsTo = "me", ID = Guid.NewGuid(), Cars = new List<Car> { cars[0] } } };
 
-            _mockFileHandler.Setup(a => a.ReadAllTextAsync("C:\\Users\\Ioannis.Batenkof\\source\\repos\\AzubiWiki_AzureFunctions-Program.Backend.Database\\File_GarageStorage.json")).Returns(Task.FromResult(JsonConvert.SerializeObject(garages, Formatting.Indented)));
-            _mockFileHandler.Setup(a => a.ReadAllTextAsync("C:\\Users\\Ioannis.Batenkof\\source\\repos\\AzubiWiki_AzureFunctions-Program.Backend.Database\\File_CarStorage.json")).Returns(Task.FromResult(JsonConvert.SerializeObject(cars, Formatting.Indented)));
+            _mockFileHandler.Setup(a => a.ReadAllTextAsync(CFilePath)).Returns(Task.FromResult(JsonConvert.SerializeObject(garages, Formatting.Indented)));
+            _mockFileHandler.Setup(a => a.ReadAllTextAsync(GFilePath)).Returns(Task.FromResult(JsonConvert.SerializeObject(cars, Formatting.Indented)));
 
             Repositories.GarageRepository repo = new(_mockFileHandler.Object);
 
@@ -70,8 +73,8 @@ namespace AzubiWiki_AzureFunctions_Program.Backend.UnitTest.GarageRepository.Tes
             List<Car> cars = new List<Car> { new Car { ID = Guid.NewGuid(), Horsepower = 123, Manufacturer = "audi", Model = "a", Year = 2000 } };
             List<Garage> garages = new List<Garage> { new Garage { BelongsTo = "me", ID = Guid.NewGuid(), Cars = new List<Car> { cars[0] } } };
 
-            _mockFileHandler.Setup(a => a.ReadAllTextAsync("C:\\Users\\Ioannis.Batenkof\\source\\repos\\AzubiWiki_AzureFunctions-Program.Backend.Database\\File_GarageStorage.json")).Returns(Task.FromResult(JsonConvert.SerializeObject(garages, Formatting.Indented)));
-            _mockFileHandler.Setup(a => a.ReadAllTextAsync("C:\\Users\\Ioannis.Batenkof\\source\\repos\\AzubiWiki_AzureFunctions-Program.Backend.Database\\File_CarStorage.json")).Returns(Task.FromResult(JsonConvert.SerializeObject(cars, Formatting.Indented)));
+            _mockFileHandler.Setup(a => a.ReadAllTextAsync(CFilePath)).Returns(Task.FromResult(JsonConvert.SerializeObject(garages, Formatting.Indented)));
+            _mockFileHandler.Setup(a => a.ReadAllTextAsync(GFilePath)).Returns(Task.FromResult(JsonConvert.SerializeObject(cars, Formatting.Indented)));
 
             Repositories.GarageRepository repo = new(_mockFileHandler.Object);
 
