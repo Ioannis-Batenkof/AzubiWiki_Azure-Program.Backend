@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xunit.Sdk;
 
-namespace AzubiWiki_AzureFunctions_Program.Backend.UnitTest.Validation.Test
+namespace AzubiWiki_AzureFunctions_Program.Backend.UnitTest.Validation.UnitTest
 {
     public class NewCar
     {

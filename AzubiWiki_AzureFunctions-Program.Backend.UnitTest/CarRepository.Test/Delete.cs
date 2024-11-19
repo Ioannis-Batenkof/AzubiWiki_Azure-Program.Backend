@@ -5,7 +5,7 @@ using FluentAssertions.Execution;
 using Moq;
 using Newtonsoft.Json;
 
-namespace AzubiWiki_AzureFunctions_Program.Backend.UnitTest.CarRepository.Test
+namespace AzubiWiki_AzureFunctions_Program.Backend.UnitTest.CarRepository.UnitTest
 {
     public class Delete
     {

@@ -1,0 +1,12 @@
+{
+    "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet-isolated",
+    "CarFile": "C:\\Users\\Ioannis.Batenkof\\source\\repos\\AzubiWiki_Azure-Program.Backend.Revisited\\AzubiWiki_AzureFunctions-Program.Backend.Database\\File_CarStorage.json",
+    "GarageFile": "C:\\Users\\Ioannis.Batenkof\\source\\repos\\AzubiWiki_Azure-Program.Backend.Revisited\\AzubiWiki_AzureFunctions-Program.Backend.Database\\File_GarageStorage.json",
+    "ConnectionString": "UseDevelopmentStorage=true",
+    "BlobCarContainerName": "azubiwiki-car-backup",
+    "BlobGarageContainerName": "azubiwiki-garage-backup"
+  }
+}

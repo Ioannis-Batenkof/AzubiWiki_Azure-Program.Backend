@@ -10,7 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AzubiWiki_AzureFunctions_Program.Backend.UnitTest.CarRepository.Test
+namespace AzubiWiki_AzureFunctions_Program.Backend.UnitTest.CarRepository.UnitTest
 {
     public class Create
     {

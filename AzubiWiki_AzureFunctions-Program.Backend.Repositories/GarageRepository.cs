@@ -12,10 +12,6 @@ namespace AzubiWiki_AzureFunctions_Program.Backend.Repositories
 
         public GarageRepository(IFileHandler fileHandler)
         {
-            if (!File.Exists(FilePath))
-            {
-                File.Create(FilePath);
-            }
             _fileHandler = fileHandler;
         }
 
