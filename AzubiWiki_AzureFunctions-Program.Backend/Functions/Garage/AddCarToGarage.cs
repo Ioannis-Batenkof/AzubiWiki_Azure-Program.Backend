@@ -36,17 +36,17 @@ namespace AzubiWiki_AzureFunctions_Program.Backend.Functions.Garage
         [OpenApiResponseWithBody(statusCode: HttpStatusCode.FailedDependency, contentType: "application/json", bodyType: typeof(FileNotFoundException), Description = "Database was not loaded properly or is in maintenance")]
         [OpenApiResponseWithBody(statusCode: HttpStatusCode.ServiceUnavailable, contentType: "application/json", bodyType: typeof(CarIsUnavailableException), Description = "Requested Car Object is already assighen to another Garage Object")]
         [OpenApiResponseWithBody(statusCode: HttpStatusCode.Ambiguous, contentType: "application/json", bodyType: typeof(Exception), Description = "Unexcpected/Unhandled Exception")]
-        public async Task<HttpResponseData> Run([HttpTrigger(AuthorizationLevel.Anonymous, "patch", Route = "Garages/{GID}/Cars/{CID}")] HttpRequestData req, string GID, string CID)
+        public async Task<HttpResponseData> Run([HttpTrigger(AuthorizationLevel.Anonymous, "patch", Route = "garages/{gid}/cars/{cid}")] HttpRequestData req, string gid, string cid)
         {
-            Guid gid;
-            Guid cid;
+            Guid GID;
+            Guid CID;
             try
             {
-                gid = Guid.Parse(GID);
-                cid = Guid.Parse(CID);
+                GID = Guid.Parse(gid);
+                CID = Guid.Parse(cid);
 
-                gid.Should().NotBeEmpty();
-                cid.Should().NotBeEmpty();
+                GID.Should().NotBeEmpty();
+                CID.Should().NotBeEmpty();
             }
             catch (Exception ex)
             {
@@ -58,8 +58,8 @@ namespace AzubiWiki_AzureFunctions_Program.Backend.Functions.Garage
 
             try
             {
-                Core.Model.Car car = await _carStorageService.Read(cid);
-                Core.Model.Garage garage = await _garageStorageService.Read(gid);
+                Core.Model.Car car = await _carStorageService.Read(CID);
+                Core.Model.Garage garage = await _garageStorageService.Read(GID);
 
                 if (garage.Cars == null)
                 {

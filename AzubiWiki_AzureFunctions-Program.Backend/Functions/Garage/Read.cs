@@ -34,14 +34,14 @@ namespace AzubiWiki_AzureFunctions_Program.Backend.Functions.Garage
         [OpenApiResponseWithBody(statusCode: HttpStatusCode.FailedDependency, contentType: "application/json", bodyType: typeof(FileNotFoundException), Description = "Database was not loaded properly or is in maintenance")]
         [OpenApiResponseWithBody(statusCode: HttpStatusCode.ExpectationFailed, contentType: "application/json", bodyType: typeof(AssertionFailedException), Description = "Expectations were not met")]
         [OpenApiResponseWithBody(statusCode: HttpStatusCode.Ambiguous, contentType: "application/json", bodyType: typeof(Exception), Description = "Unexpected/Unhandled Exception")]
-        public async Task<HttpResponseData> Run([HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "Garages/{ID}")] HttpRequestData req, string ID)
+        public async Task<HttpResponseData> Run([HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "garages/{id}")] HttpRequestData req, string id)
         {
-            Guid id;
+            Guid ID;
             try
             {
-                id = Guid.Parse(ID);
+                ID = Guid.Parse(id);
 
-                id.Should().NotBeEmpty();
+                ID.Should().NotBeEmpty();
             }
             catch (Exception ex)
             {
@@ -53,7 +53,7 @@ namespace AzubiWiki_AzureFunctions_Program.Backend.Functions.Garage
 
             try
             {
-                GarageDTO garage = _mapper.Map<GarageDTO>(await _storageService.Read(id));
+                GarageDTO garage = _mapper.Map<GarageDTO>(await _storageService.Read(ID));
 
                 garage.Should().NotBeNull();
 

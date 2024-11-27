@@ -38,7 +38,7 @@ namespace AzubiWiki_AzureFunctions_Program.Backend.Functions.Car
         [OpenApiResponseWithBody(statusCode: HttpStatusCode.FailedDependency,contentType:"application/json", bodyType: typeof(FileNotFoundException), Description = "Database was not loaded properly or is in maintenance")]
         [OpenApiResponseWithBody(statusCode: HttpStatusCode.Ambiguous,contentType: "application/json", bodyType: typeof(Exception) ,Description = "Unexcpected/Unhandled Exception")]
         [OpenApiRequestBody(contentType: "application/josn", bodyType: typeof(CarQ), Required = true, Description = "This is the object required to execute a creation")]
-        public async Task<HttpResponseData> Run([HttpTrigger(AuthorizationLevel.Anonymous, "post", Route = "Cars")] HttpRequestData req)
+        public async Task<HttpResponseData> Run([HttpTrigger(AuthorizationLevel.Anonymous, "post", Route = "cars")] HttpRequestData req)
         {
             CarQ car = new();
             try

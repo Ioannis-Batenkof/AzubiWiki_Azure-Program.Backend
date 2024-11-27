@@ -34,17 +34,17 @@ namespace AzubiWiki_AzureFunctions_Program.Backend.Functions.Garage
         [OpenApiResponseWithBody(statusCode: HttpStatusCode.ExpectationFailed, contentType: "application/json", bodyType: typeof(AssertionFailedException), Description = "Object did not pass the initial validation.")]
         [OpenApiResponseWithBody(statusCode: HttpStatusCode.FailedDependency, contentType: "application/json", bodyType: typeof(FileNotFoundException), Description = "Database was not loaded properly or is in maintenance")]
         [OpenApiResponseWithBody(statusCode: HttpStatusCode.Ambiguous, contentType: "application/json", bodyType: typeof(Exception), Description = "Unexcpected/Unhandled Exception")]
-        public async Task<HttpResponseData> Run([HttpTrigger(AuthorizationLevel.Anonymous, "delete", Route = "Garages/{GID}/Cars/{CID}")] HttpRequestData req, string GID, string CID)
+        public async Task<HttpResponseData> Run([HttpTrigger(AuthorizationLevel.Anonymous, "delete", Route = "garages/{gid}/cars/{cid}")] HttpRequestData req, string gid, string cid)
         {
-            Guid gid;
-            Guid cid;
+            Guid GID;
+            Guid CID;
             try
             {
-                gid = Guid.Parse(GID);
-                cid = Guid.Parse(CID);
+                GID = Guid.Parse(gid);
+                CID = Guid.Parse(cid);
 
-                gid.Should().NotBeEmpty();
-                cid.Should().NotBeEmpty();
+                GID.Should().NotBeEmpty();
+                CID.Should().NotBeEmpty();
             }
             catch (Exception ex)
             {
@@ -56,13 +56,13 @@ namespace AzubiWiki_AzureFunctions_Program.Backend.Functions.Garage
 
             try
             {
-                Core.Model.Garage garage = await _garageStorageService.Read(gid);
-                Core.Model.Car car = await _carStorageService.Read(cid);
+                Core.Model.Garage garage = await _garageStorageService.Read(GID);
+                Core.Model.Car car = await _carStorageService.Read(CID);
                 bool found = false;
 
                 for (int i = 0; i < garage.Cars.Count; i++)
                 {
-                    if (garage.Cars[i].ID == cid)
+                    if (garage.Cars[i].ID == CID)
                     {
                         garage.Cars.RemoveAt(i);
                         found = true;

@@ -35,19 +35,19 @@ namespace AzubiWiki_AzureFunctions_Program.Backend.Functions.Car
         [OpenApiResponseWithBody(statusCode: HttpStatusCode.FailedDependency, contentType: "application/json", bodyType: typeof(FileNotFoundException), Description = "Database was not loaded properly or is in maintenance")]
         [OpenApiResponseWithBody(statusCode: HttpStatusCode.ExpectationFailed, contentType: "application/json", bodyType: typeof(AssertionFailedException), Description = "Expectations were not met")]
         [OpenApiResponseWithBody(statusCode: HttpStatusCode.Ambiguous, contentType: "application/json", bodyType: typeof(Exception), Description = "Unexpected/Unhandled Exception")]
-        public async Task<HttpResponseData> Run([HttpTrigger(AuthorizationLevel.Anonymous, "patch", Route = "Cars/{ID}")] HttpRequestData req, string ID)
+        public async Task<HttpResponseData> Run([HttpTrigger(AuthorizationLevel.Anonymous, "patch", Route = "cars/{id}")] HttpRequestData req, string id)
         {
-            Guid id;
+            Guid ID;
             CarQ car;
             try
             {
-                id = Guid.Parse(ID);
+                ID = Guid.Parse(id);
                 string requestBody = await new StreamReader(req.Body).ReadToEndAsync();
                 car = JsonConvert.DeserializeObject<CarQ>(requestBody);
 
                 car.Should().NotBeNull();
 
-                car.ID = id;
+                car.ID = ID;
             }
             catch (Exception ex)
             {

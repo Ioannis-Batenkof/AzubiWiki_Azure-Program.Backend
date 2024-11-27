@@ -2,6 +2,15 @@
   {
     "ID": "e7817cad-64c7-4735-b427-33d11019cf17",
     "BelongsTo": "Ioannis",
-    "Cars": []
+    "Cars": [
+      {
+        "ID": "986d851e-7216-47e8-82bc-2b3484084fbc",
+        "Manufacturer": "Tesla",
+        "Model": "S model",
+        "Year": 2019,
+        "Horsepower": 220,
+        "Available": false
+      }
+    ]
   }
 ]

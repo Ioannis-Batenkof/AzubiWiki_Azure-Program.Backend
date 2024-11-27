@@ -37,7 +37,7 @@ namespace AzubiWiki_AzureFunctions_Program.Backend.Functions.Garage
         [OpenApiResponseWithBody(statusCode: HttpStatusCode.Ambiguous, contentType: "application/json", bodyType: typeof(Exception), Description = "Unexcpected/Unhandled Exception")]
         [OpenApiRequestBody(contentType: "application/josn", bodyType: typeof(GarageQ), Required = true, Description = "This is the object required to execute a creation")]
 
-        public async Task<HttpResponseData> Run([HttpTrigger(AuthorizationLevel.Anonymous, "post", Route = "Garages")] HttpRequestData req)
+        public async Task<HttpResponseData> Run([HttpTrigger(AuthorizationLevel.Anonymous, "post", Route = "garages")] HttpRequestData req)
         {
             GarageQ garage = new();
             try

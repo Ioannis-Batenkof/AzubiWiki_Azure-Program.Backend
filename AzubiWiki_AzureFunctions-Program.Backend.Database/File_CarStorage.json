@@ -5,6 +5,6 @@
     "Model": "S model",
     "Year": 2019,
     "Horsepower": 220,
-    "Available": true
+    "Available": false
   }
 ]

@@ -28,13 +28,13 @@ namespace AzubiWiki_AzureFunctions_Program.Backend.Functions.Car
         [OpenApiResponseWithBody(statusCode:HttpStatusCode.FailedDependency, contentType:"application/json",bodyType:typeof(FileNotFoundException), Description = "Database was not loaded properly or is in maintenance")]
         [OpenApiResponseWithBody(statusCode:HttpStatusCode.ExpectationFailed, contentType:"application/json", bodyType:typeof(AssertionFailedException), Description ="Expectations were not met")]
         [OpenApiResponseWithBody(statusCode:HttpStatusCode.Ambiguous, contentType:"application/json", bodyType: typeof(Exception), Description = "Unexpected/Unhandled Exception")]
-        public async Task<HttpResponseData> Run([HttpTrigger(AuthorizationLevel.Anonymous, "delete", Route = "Cars/{ID}")] HttpRequestData req, string ID)
+        public async Task<HttpResponseData> Run([HttpTrigger(AuthorizationLevel.Anonymous, "delete", Route = "cars/{id}")] HttpRequestData req, string id)
         {
-            Guid id;
+            Guid ID;
             try
             {
-                id = Guid.Parse(ID);
-                id.Should().NotBeEmpty();
+                ID = Guid.Parse(id);
+                ID.Should().NotBeEmpty();
             }
             catch (Exception ex)
             {
@@ -46,7 +46,7 @@ namespace AzubiWiki_AzureFunctions_Program.Backend.Functions.Car
 
             try
             {
-                await _storageService.Delete(id);
+                await _storageService.Delete(ID);
 
                 var response = req.CreateResponse(HttpStatusCode.NoContent);
                 return response;
@@ -73,5 +73,8 @@ namespace AzubiWiki_AzureFunctions_Program.Backend.Functions.Car
                 return response;
             }
         }
+
+
+
     }
 }
